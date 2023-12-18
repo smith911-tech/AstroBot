@@ -7,10 +7,9 @@ import { SiDiscord } from "react-icons/si";
 export default function Header() {
     const [toggle, setToggle] = useState(false)
     const active = location.pathname
-    console.log(active);
   return (
     <>
-      <header className="bg-[#13072E] py-4 flex justify-between items-center sticky top-0 w-full z-10 font-Poppins">
+      <header className="bg-[#13072E] py-4 flex justify-between items-center sticky top-0 w-full z-10 font-Poppins lg1000:px-10">
         <section className="flex gap-2 items-center pl-4">
           <a href="" className="inline-block">
             <img src={Logo} alt="Logo" className=" w-11 h-11 object-contain" />
