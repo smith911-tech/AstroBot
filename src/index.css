@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/*! Preloader */
+.preloader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100svh;
+}
+
+.preloader-logo {
+  width: 300px;
+  height: 300px;
+  animation: scaleInOut 1.5s infinite;
+  object-fit: contain;
+}
+
+@keyframes scaleInOut {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
