@@ -15,7 +15,7 @@ export default function Header() {
             <img src={Logo} alt="Logo" className=" w-11 h-11 object-contain" />
           </a>
           <p className=" text-white font-Poppins font-semibold text-base hidden">
-            Astro Studio
+            Astro Studio 
           </p>
         </section>
         <section
