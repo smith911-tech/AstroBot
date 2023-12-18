@@ -6,6 +6,8 @@ import { HiMiniXMark } from "react-icons/hi2";
 import { SiDiscord } from "react-icons/si";
 export default function Header() {
     const [toggle, setToggle] = useState(false)
+    const active = location.pathname
+    console.log(active);
   return (
     <>
       <header className="bg-[#13072E] py-4 flex justify-between items-center sticky top-0 w-full z-10 font-Poppins">
@@ -22,15 +24,30 @@ export default function Header() {
             toggle ? "left-0  " : "left-[99999px] "
           } bg-[#13072E] w-full h-[100svh] sm768:relative  sm768:w-[inherit] sm768:h-[inherit] sm768:flex-row sm768:gap-10 sm768:left-0 sm768:font-medium`}
         >
-          <Link to="/" className=" text-3xl text-white sm768:text-[15px]">
+          <Link
+            onClick={() => setToggle(false)}
+            to="/"
+            className={`text-3xl sm768:text-[15px] ${
+              active === "/" ? "text-white" : "text-[#ffffff92]"
+            }`}
+          >
             Home
           </Link>
-          <Link to="/team" className=" text-3xl text-white sm768:text-[15px]">
+          <Link
+            onClick={() => setToggle(false)}
+            to="/team"
+            className={`text-3xl sm768:text-[15px] ${
+              active === "/team" ? "text-white" : "text-[#ffffff92]"
+            }`}
+          >
             Team
           </Link>
           <Link
+            onClick={() => setToggle(false)}
             to="/hosting"
-            className=" text-3xl text-white sm768:text-[15px]"
+            className={`text-3xl sm768:text-[15px] ${
+              active === "/hosting" ? "text-white" : "text-[#ffffff92]"
+            }`}
           >
             Hosting
           </Link>
