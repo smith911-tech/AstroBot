@@ -15,13 +15,13 @@ export default function Header() {
             <img src={Logo} alt="Logo" className=" w-11 h-11 object-contain" />
           </a>
           <p className=" text-white font-Poppins font-semibold text-base hidden">
-            Astro Studio 
+            Astro Studio
           </p>
         </section>
         <section
           className={`flex flex-col text-center z-50 justify-center gap-[10%] font-bold  fixed transition-all duration-500 top-0  ${
             toggle ? "left-0  " : "left-[99999px] "
-          } bg-[#13072E] w-full h-[100svh] sm768:relative  sm768:w-[inherit] sm768:h-[inherit] sm768:flex-row sm768:gap-10 sm768:left-0 sm768:font-medium`}
+          } bg-[#13072E] w-full h-[100vh] sm768:relative  sm768:w-[inherit] sm768:h-[inherit] sm768:flex-row sm768:gap-10 sm768:left-0 sm768:font-medium`}
         >
           <Link
             onClick={() => setToggle(false)}
@@ -50,6 +50,15 @@ export default function Header() {
           >
             Hosting
           </Link>
+          <a
+            href="https://status.astro-studios.xyz/status/studios"
+            target="blank"
+            onClick={() => setToggle(false)}
+            className={`text-3xl sm768:text-[15px] text-[#ffffff92]
+            `}
+          >
+            Status Page
+          </a>
           <button className=" text-xl flex justify-center w-full bg-white py-3 items-center gap-1 sm768:py-1  sm768:w-[190px] sm768:text-lg sm768:hidden">
             <p>Connect Discord</p>
             <SiDiscord />

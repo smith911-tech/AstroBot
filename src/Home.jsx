@@ -20,13 +20,13 @@ export default function Home() {
               Discord Channel
             </h2>
             <p className=" text-sm text-white font-medium my-6">
-              Astro Bot is a Discord bot developed by "Astro Studios" the Astro
-              Bot will help you taking care about your Discord server. With so
-              many features Astro Bot is one of the Best Bots available
-              rightnow. Astro Host is a hoster which comes from Astro Studios.
-              Astro Hosts your Discord Bots for cheap prices. In the future
-              Astro Host will also host your minecraft Server. More features are
-              coming soon!
+              Astro Bot is a Discord bot developed by 'Astro Studios.' The Astro
+              Bot will help you take care of your Discord server. With so many
+              features, Astro Bot is one of the best bots available right now.
+              Astro Host is a hosting service that comes from Astro Studios.
+              Astro Hosts your Discord bots for affordable prices. In the
+              future, Astro Host will also host your Minecraft server. More
+              features are coming soon!
             </p>
             <a
               href="https://discord.gg/astrostudios"
