@@ -46,23 +46,23 @@ export default function Team() {
             Team Members connected with their Social Media Profiles.
           </p>
           <section className=" mt-10 pb-4 flex justify-center gap-[5%] flex-wrap">
-            <div className="flex flex-col justify-center items-center rounded-3xl shadow-lg bg-[#F8F8F8] gap-10 p-10 w-[70%] mb-9">
+            <div className="flex flex-col justify-center items-center rounded-3xl shadow-lg bg-[#F8F8F8] gap-10 p-10 w-[85%] mb-9">
               <h2 className=" text-xl font-medium ">Joni</h2>
               <p className="">Founder/Developer</p>
             </div>
-            <div className="flex flex-col justify-center items-center rounded-3xl shadow-lg bg-[#F8F8F8] gap-10 p-10 w-[70%] mb-9">
+            <div className="flex flex-col justify-center items-center rounded-3xl shadow-lg bg-[#F8F8F8] gap-10 p-10 w-[85%] mb-9">
               <h2 className=" text-xl font-medium ">Astro</h2>
               <p>Founder/Developer</p>
             </div>
-            <div className="flex flex-col justify-center items-center rounded-3xl shadow-lg bg-[#F8F8F8] gap-10 p-10 w-[70%] mb-9">
+            <div className="flex flex-col justify-center items-center rounded-3xl shadow-lg bg-[#F8F8F8] gap-10 p-10 w-[85%] mb-9">
               <h2 className=" text-xl font-medium ">FRANKI</h2>
               <p className="">Team Manager/Developer</p>
             </div>
-            <div className="flex flex-col justify-center items-center rounded-3xl shadow-lg bg-[#F8F8F8] gap-10 p-10 w-[70%] mb-9">
+            <div className="flex flex-col justify-center items-center rounded-3xl shadow-lg bg-[#F8F8F8] gap-10 p-10 w-[85%] mb-9">
               <h2 className=" text-xl font-medium ">Joseph</h2>
               <p className="">Web Developer/Developer</p>
             </div>
-            <div className="flex flex-col justify-center items-center rounded-3xl shadow-lg bg-[#F8F8F8] gap-10 p-10 w-[70%] mb-9">
+            <div className="flex flex-col justify-center items-center rounded-3xl shadow-lg bg-[#F8F8F8] gap-10 p-10 w-[85%] mb-9">
               <h2 className=" text-xl font-medium ">Hydra</h2>
               <p className="">Developer</p>
             </div>
