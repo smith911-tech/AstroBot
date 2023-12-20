@@ -65,12 +65,9 @@ export default function Team() {
 
   return (
     <main className=" bg-[#13072E]">
-      <Snowfall
-        color="white"
-        snowflakeCount={200}
-      />
+      <Snowfall color="white" snowflakeCount={200} />
       <Header />
-      <section className="lg900:px-12 min-h-[80svh]">
+      <section className="lg900:px-12 min-h-[80svh] changePageanimation">
         <section className=" mt-10 mx-4 bg-gradient-to-b from-[#13072E] to-[#402182] pt-10 pb-2  rounded-xl px-4 flex flex-col lg900:flex-row lg900:justify-between lg900:gap-10">
           <div>
             <p className=" bg-[#B3AAFF] px-2 py-1 rounded-xl inline-block text-sm">
@@ -97,7 +94,7 @@ export default function Team() {
             <img
               src={Community}
               alt="image animation"
-              className=" h-96 w-full animate-spin-slow object-contain "
+              className=" h-96 w-full animate-spin-slow object-contain  select-none"
             />
           </div>
         </section>

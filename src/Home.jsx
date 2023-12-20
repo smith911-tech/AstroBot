@@ -4,12 +4,13 @@ import { BiSolidCustomize } from "react-icons/bi";
 import { GiLaptop } from "react-icons/gi";
 import { FaBug } from "react-icons/fa";
 import Footer from "./General Component/Footer";
+import AnimationImg from "./assets/log-in-girl.svg";
 
 export default function Home() {
   return (
-    <main className=" bg-[#13072E] font-Poppins">
+    <main className=" bg-[#13072E] font-Poppins ">
       <Header />
-      <section className="lg900:px-12">
+      <section className="lg900:px-12 changePageanimation">
         <section className=" mt-10 mx-4 bg-gradient-to-b from-[#13072E] to-[#402182] pt-10 pb-2  rounded-xl px-4 flex flex-col lg900:flex-row lg900:justify-between lg900:gap-10">
           <div>
             <p className=" bg-[#B3AAFF] px-2 py-1 rounded-xl inline-block text-sm">
@@ -36,7 +37,7 @@ export default function Home() {
             </a>
           </div>
           <img
-            src="https://app.svgator.com/assets/svgator.webapp/log-in-girl.svg"
+            src={AnimationImg}
             alt="image animation"
             className=" h-96 w-full"
           />

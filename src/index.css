@@ -53,5 +53,22 @@ line {
 
 .animate-spin-slow {
   animation: spin-slow 2s linear infinite;
-  /* Adjust the duration as needed */
+}
+
+/* ! change page animation */
+.changePageanimation {
+  animation-name: dropdown;
+  animation-duration: 1s;
+}
+
+@keyframes dropdown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
