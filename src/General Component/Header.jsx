@@ -19,8 +19,8 @@ export default function Header() {
           </p>
         </section>
         <section
-          className={`flex flex-col text-center z-50 justify-center gap-[10%] font-bold  fixed transition-all duration-500 top-0  ${
-            toggle ? "left-0  " : "left-[99999px] "
+          className={`flex flex-col text-center z-50 justify-center gap-[10%] font-bold  fixed  top-0 ease-in-out  ${
+            toggle ? "left-0 " : "left-[99999px] "
           } bg-[#13072E] w-full h-[100vh] sm768:relative  sm768:w-[inherit] sm768:h-[inherit] sm768:flex-row sm768:gap-10 sm768:left-0 sm768:font-medium`}
         >
           <Link
