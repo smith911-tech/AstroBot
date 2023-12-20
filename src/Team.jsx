@@ -13,6 +13,7 @@ import {
   FaGithub,
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import Snowfall from "react-snowfall";
 
 export default function Team() {
   const Staffs = [
@@ -64,6 +65,10 @@ export default function Team() {
 
   return (
     <main className=" bg-[#13072E]">
+      <Snowfall
+        color="white"
+        snowflakeCount={200}
+      />
       <Header />
       <section className="lg900:px-12 min-h-[80svh]">
         <section className=" mt-10 mx-4 bg-gradient-to-b from-[#13072E] to-[#402182] pt-10 pb-2  rounded-xl px-4 flex flex-col lg900:flex-row lg900:justify-between lg900:gap-10">
