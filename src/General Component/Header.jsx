@@ -60,7 +60,7 @@ export default function Header() {
             Status Page
           </a>
           <button className=" text-xl flex justify-center w-full bg-white py-3 items-center gap-1 sm768:py-1  sm768:w-[190px] sm768:text-lg sm768:hidden">
-            <p>Connect Discord</p>
+            <p>Connect to Discord</p>
             <SiDiscord />
           </button>
           <div
@@ -77,7 +77,7 @@ export default function Header() {
           <BiMenuAltRight />
         </section>
         <button className=" text-[15px] font-medium sm768:flex justify-center min-w-max bg-white py-3 px-2 items-center gap-1 sm768:py-1  sm768:text-base hidden mr-4 rounded-2xl">
-          <p>Connect Discord</p>
+          <p>Connect to Discord</p>
           <SiDiscord />
         </button>
       </header>

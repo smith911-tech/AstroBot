@@ -41,7 +41,7 @@ export default function Team() {
     },
     {
       id: 3,
-      name: "FRANKI",
+      name: "Franki",
       img: Franki,      
       role: "Team Manager/Developer",
       socials: {
@@ -52,7 +52,7 @@ export default function Team() {
     },
     {
       id: 4,
-      name: "Dev Joe",
+      name: "Joe",
       img: DevJoe,
       role: "Web Developer/Developer",
       socials: {
@@ -87,7 +87,7 @@ export default function Team() {
               href="https://discord.gg/astrostudios"
               className=" my-4 px-5 py-2 bg-white font-medium rounded-xl hover:bg-[#dcbfe4] duration-500"
             >
-              <button>Join Discord</button>
+              <button>Discord</button>
             </a>
           </div>
           <div className=" w-full overflow-hidden">
@@ -104,7 +104,7 @@ export default function Team() {
           Meet the <span className=" font-semibold">team.</span>
         </h2>
         <p className=" text-center font-Poppins font-light">
-          Team Members connected with their Social Media Profiles.
+          Team members connected with their social media profiles.
         </p>
         <section className=" mt-10 pb-4 flex justify-center gap-[5%] flex-wrap">
           {Staffs.map((data) => (

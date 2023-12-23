@@ -49,6 +49,9 @@ export default function Hosting() {
           <h2 className="text-2xl font-bold mb-4 text-center text text-white">
             Get Started
           </h2>
+          <h4 className="text-1xl font-bold mb-4 text-center text text-white">
+            When buying a hosting tier, your Discord bot will get a place on our status page
+          </h4>
           <p className="mb-8 text-sm text-white font-medium text-center">
             Explore the hosting tiers, review the statistics, and make a
             confident choice for your hosting needs. Click the buttons below to
@@ -58,11 +61,6 @@ export default function Hosting() {
             the right decision for your online endeavors.
           </p>
           <div>
-            <img
-              src={server}
-              alt=""
-              className=" w-full  sm768:h-40 sm768:object-cover mb-10"
-            />
             <section className="flex flex-col gap-10 sm768:flex-row  sm768:justify-center">
               <div className=" sm768:w-[40%]">
                 <p className=" text-2xl text-white font-semibold">
@@ -72,7 +70,7 @@ export default function Hosting() {
                   Tier 1 hosting is a favorable choice when it comes to Discord
                   bot hosting, especially for developers with smaller bots.
                 </p>
-                <a href="https://status.astro-studios.xyz/status/studios">
+                <a href="https://discord.gg/astrostudios">
                   <button className=" mt-5 px-5 bg-white py-1 rounded-xl font-semibold shadow-lg hover:bg-slate-500">
                     Statistics
                   </button>
@@ -86,7 +84,7 @@ export default function Hosting() {
                   The Tier 2 hosting plan emerges as an ideal choice for Discord
                   bot hosting, particularly for medium-sized bots.
                 </p>
-                <a href="https://status.astro-studios.xyz/status/studios">
+                <a href="https://discord.gg/astrostudios">
                   <button className=" mt-5 px-5 bg-white py-1 rounded-xl font-semibold shadow-lg hover:bg-slate-500">
                     Statistics
                   </button>
@@ -102,7 +100,7 @@ export default function Hosting() {
                   The Tier 3 hosting plan proves to be an excellent choice for
                   Discord bot hosting, particularly suitable for large bots.
                 </p>
-                <a href="https://status.astro-studios.xyz/status/studios">
+                <a href="https://discord.gg/astrostudios">
                   <button className=" mt-5 px-5 bg-white py-1 rounded-xl font-semibold shadow-lg hover:bg-slate-500">
                     Statistics
                   </button>
@@ -116,7 +114,7 @@ export default function Hosting() {
                   You can request custom tiers from us. This hosting will then
                   be perfectly adapted to your wishes.
                 </p>
-                <a href="https://status.astro-studios.xyz/status/studios">
+                <a href="https://discord.gg/astrostudios">
                   <button className=" mt-5 px-5 bg-white py-1 rounded-xl font-semibold shadow-lg hover:bg-slate-500">
                     Statistics
                   </button>
