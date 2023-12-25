@@ -3,7 +3,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Preloader from "./Preloader";
 import Home from "./Home";
 import Team from "./Team";
-import Hosting from "./Hosting";
+import DiscordH from "./discordh";
+
 function App() {
     const [isLoading, setIsLoading] = useState(true)
     useEffect(() => {
@@ -21,7 +22,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/team" element={<Team />} />
-            <Route path="/hosting" element={<Hosting />} />
+            <Route path="/discordh" element={<DiscordH />} />
           </Routes>
         </BrowserRouter>
       )}

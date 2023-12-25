@@ -4,9 +4,26 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { HiMiniXMark } from "react-icons/hi2";
 import { SiDiscord } from "react-icons/si";
+
+
 export default function Header() {
-    const [toggle, setToggle] = useState(false)
-    const active = location.pathname
+    const [toggle, setToggle] = useState(false);
+    const [showDropdown, setShowDropdown] = useState(false);
+    const active = location.pathname;
+    let hoverTimeout;
+
+    const handleMouseEnter = () => {
+        clearTimeout(hoverTimeout);
+        setShowDropdown(true);
+    };
+
+    const handleMouseLeave = () => {
+        hoverTimeout = setTimeout(() => {
+            setShowDropdown(false);
+        }, 300); // Adjust this delay as needed
+    };
+
+
   return (
     <>
       <header className="bg-[#13072E] py-4 flex justify-between items-center sticky top-0 w-full z-10 font-Poppins lg1000:px-10">
@@ -41,15 +58,28 @@ export default function Header() {
           >
             Team
           </Link>
-          <Link
-            onClick={() => setToggle(false)}
-            to="/hosting"
-            className={`text-3xl sm768:text-[15px] ${
-              active === "/hosting" ? "text-white" : "text-[#ffffff92]"
-            }`}
-          >
-            Hosting
-          </Link>
+          <div
+                    className="relative"
+            >
+                <Link
+                    to="/hosting"
+                    className="text-3xl sm768:text-[15px] text-[#ffffff92]"
+                    onMouseEnter={handleMouseEnter}
+                    onClick={(e) => e.preventDefault()}
+                  >
+                    Hosting
+                </Link>
+                <div
+                        className={`absolute left-0 bg-[#13072E] text-white py-2 ${showDropdown ? 'visible' : 'hidden'}`}
+                        style={{ top: '100%', left: '0', transform: 'translateX(-17%)' }}
+                        onMouseEnter={handleMouseEnter}
+                        onMouseLeave={handleMouseLeave}
+                  >
+                    <Link to="/discordh" className="block px-4 py-2">Discord</Link>
+                    <Link to="/minecraft" className="block px-4 py-2">Minecraft</Link>
+                    <Link to="/other" className="block px-4 py-2">Other</Link>
+                </div>
+            </div>
           <a
             href="https://status.astro-studios.xyz/status/studios"
             target="blank"

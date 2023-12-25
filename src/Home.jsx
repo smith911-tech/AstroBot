@@ -71,7 +71,7 @@ export default function Home() {
               href="https://status.astro-studios.xyz/status/studios"
               className="bg-white px-3 py-1 rounded-md  hover:bg-[#dcbfe4] duration-500"
             >
-              <button>Status P</button>
+              <button>Status Page</button>
             </a>
           </div>
           <h2 className=" text-white font-medium mt-20">
